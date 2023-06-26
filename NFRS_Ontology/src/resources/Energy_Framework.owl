@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#"
+     xml:base="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework">
+        <rdfs:comment xml:lang="en">The ontology will be used for the development of the Platform EMB3Rs.  It will provide a clear framework which let us understand how to reach important Objectives of the platforms such as compliance with essential NFRs like Scalability, Replicability, Flexibility, etc.
+It will focus on the Energy domain trying to understand which factors could be important for the future development of the platform.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#accept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#accept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Technologies"/>
+        <rdfs:comment xml:lang="en">Stakeholder acceptance of new regulations and  technologies is one of the main factor to assess scalability and replicability of new projects in the energy domain. 
+Stakeholders accept regulations and technologies</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#affect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#affect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Markets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Energy_Transmission_Networks"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:comment xml:lang="en">The type of market influences the decisions of stakeholders and their investments, it also influences the type of energy transmission network we would invest in.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#enact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#enact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Policy_makers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:comment xml:lang="en">Policy makers enact new regulations</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#rule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#rule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Markets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Technologies"/>
+        <rdfs:comment xml:lang="en">The regulations regulate the behavior of stakeholders by influencing their decisions. They also characterize the different market contexts in which we operate.
+And finally they also regulate the use of new technologies.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#safeguard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#safeguard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud_security"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Business -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Business">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Each stakeholder has a different Business to take care, in a different Energy sector.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Country">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The country to which the regulations refer must be considered, because they vary from country to country. Or, if the regulations are international. 
+The nationality of the stakeholder can also be important, as interests in the energy sector vary in different countries and the market player is influenced by the context in which they are located.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Database_URL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Database_URL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">Each database is characterized by a specific URL that identifies it.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Database_triggers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Database_triggers">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">a database can also be characterized by a series of triggers that detail its operation. A database trigger is procedural code that is automatically executed in response to certain events on a particular table or view in a database. The trigger is mostly used for maintaining the integrity of the information on the database.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Database_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Database_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Databases"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A database can be of several types: Relational databases, Object-oriented databases, Distributed databases, Data warehouse, NoSQL database, Graphical databases, OLTP database, etc.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#EnergySector_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#EnergySector_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Each stakeholder could be related in a particular Energy sector type in which its has interest. (gas sector, smart grid, DHC, etc.)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Prog.Tecniques_Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Prog.Tecniques_Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Programming_techniques"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Various programming techniques might be used to achieve space scalability, such as sparse matrix methods or compression. Because compression takes time, it is possible that space scalability may only be achieved at the expense of load scalability.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Range -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Range">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Each regulation has a different scope. In fact, the regulation can have only regional validity, or be recognized at national level and finally also at European or world level.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulation_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulation_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The distinction between PUSH and PULL measures is highly relevant when examining the acceptability of policies. 
+- Push measures may be perceived as coercive, by making environmentally unsound behavior more expensive and, consequently, less attractive. 
+- In contrast, pull measures are aimed at making environmentally friendly behavior less expensive, are noncoercive in nature, and consequently, more attractive.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Sched.Algorithms_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Sched.Algorithms_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Scheduling_Algorithms"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The main purposes of scheduling algorithms are to minimize resource starvation and to ensure fairness amongst the parties utilizing the resources. Scheduling deals with the problem of deciding which of the outstanding requests is to be allocated resources. There are many different scheduling algorithms such as FIFO, Earliest Deadline First Scheduling, Shortest Remaining Time, etc.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Scope -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Scope">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Every market player acts for a specific purpose. The purpose may vary depending on the market environment and your business objectives.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standard_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standard_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standards"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It is the identification name of the standard.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standard_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standard_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standards"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">actul value of the standard</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standard_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standard_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standards"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">year the standard came into effect</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidy_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidy_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It is the identification name of the subsidy.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidy_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidy_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">actul value of the subsidy</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidy_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidy_year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">year the subsidy came into effect</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Tax_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Tax_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Taxes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It is the identification name of the tax.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Tax_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Tax_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Taxes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">actual value of the fee</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Tax_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Tax_year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Taxes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">year the tax came into effect</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#CHP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#CHP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Energy_Transmission_Networks"/>
+        <rdfs:comment xml:lang="en">Combined heat and power systems</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Technologies"/>
+        <rdfs:comment xml:lang="en">The growth of the platform cannot be taken into consideration if obviously the consequent needs for storage, management and analysis of the ever growing data are not taken into account. For this purpose, the platform’s ability to interact with cloud environments is essential for achieving this goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud_computing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud_computing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud"/>
+        <rdfs:comment xml:lang="en">Cloud computing is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user.  The term is generally used to describe data centers available to many users over the Internet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud_security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud_security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud"/>
+        <rdfs:comment xml:lang="en">Cloud security refers to the technologies, policies, controls, and services that protect cloud data, applications, and infrastructure from threats.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud_storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud_storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Cloud"/>
+        <rdfs:comment xml:lang="en">Cloud storage is a model of computer data storage in which the digital data is stored in logical pools, said to be on &quot;the cloud&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#CommunityBased_market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#CommunityBased_market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#DistrictHeating_market"/>
+        <rdfs:comment xml:lang="en">These designs are forms of P2P markets where the determination of market clearing price and energy dispatched are done in a decentralized manner. The mechanism to match producers and consumers offers is different from pool design. It results in several market clearing prices per period, a price for each P2P trade between a producer and consumer.
+The community-based market design intends to represent a more hierarchical structure of bilateral peer trades. In general, a community is composed by members who share common interests or are geographically close. In this model, there is a community manager responsible for the community’s energy management. This manager supervises all the trading activities within the community, as well as works as an intermediary in the heat trade with other communities or with the main grid.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#DHC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#DHC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Energy_Transmission_Networks"/>
+        <rdfs:comment xml:lang="en">District Heat and Cold systems</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Databases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Databases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Software_tools"/>
+        <rdfs:comment xml:lang="en">Database capacity and structure affect performance as well as system scalability</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#DistrictHeating_market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#DistrictHeating_market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Markets"/>
+        <rdfs:comment xml:lang="en">District heating refers to an effective technique of distributing heat generated in a centralized location through a system of insulated pipes to various buildings such as offices, residential and industrial buildings. The heat is used for various residential and commercial heating such as a room or floor heating and water heating. The heat is generally achieved by geothermal heating, central solar heating, and heat waste from the nuclear power plant.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Electricity_market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Electricity_market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Markets"/>
+        <rdfs:comment xml:lang="en">Market relating to the supply and use of electricity as a form of energy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Energy_Transmission_Networks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Energy_Transmission_Networks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Technologies"/>
+        <rdfs:comment xml:lang="en">Energy transmission networks are varied and differ in the type of energy they distribute in the network. Different networks imply different structures and a different system of regulation. In some contexts, the construction of one system may be more incentivized than in another.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Gas_market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Gas_market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Markets"/>
+        <rdfs:comment xml:lang="en">Market relating to the supply and use of gas as a form of energy</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Investors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Investors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:comment xml:lang="en">We mean the figure of the generic investor in the energy field. Who analyzes the policies of the sector and decides to invest in innovative energy transport systems and in new technologies to be used.
+Each investor has a different business and different purposes(e.g. utility companies, municipalities, DHN operators, excess heating
+producers, among other entities).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Markets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Markets">
+        <rdfs:comment xml:lang="en">Market designs impacts on how to determine the market clearing price. 
+Each design will result in different energy dispatch and market price per agent. 
+It sometimes also refers to the roles and responsibilities of different market actors and the processes between them. This involves among other questions on what market model is used, who the players are, how they interact, what tariff structure is in place and whether additional constraints such as taxes or subsidy schemes may apply.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#PeerToPeer_market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#PeerToPeer_market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#DistrictHeating_market"/>
+        <rdfs:comment xml:lang="en">A peer-to-peer (P2P) economy is a decentralized model whereby two individuals interact to buy sell goods and services directly with each other or produce goods and service together, without an intermediary third-party or the use of an incorporated entity or business firm. In a peer-to-peer transaction, the buyer and the seller transact directly with each other in terms of the delivery of the good or service and the exchange of payment. In a peer-to-peer economy, the producer is usually a private individual or independent contractor who owns both their tools (or means of production) and their finished product.
+Regarding the P2P approach, it is proposed that two different peers can trade heat on a bilateral basis, without a third party supervision. That is, each peer “n” can exchange with another peer “m” on an individual basis, defining the amount of energy to be bought or sold at a given price.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Platform_users -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Platform_users">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:comment xml:lang="en">Those who use the platform are certainly actors in the energy domain. For this reason it is important to consider these figures and analyze what their business and purpose are.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Policy_makers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Policy_makers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders"/>
+        <rdfs:comment xml:lang="en">These figures play an important role in the energy domain. The policies adopted can influence the choices of users and investors in this field.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Pool_market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Pool_market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#DistrictHeating_market"/>
+        <rdfs:comment xml:lang="en">In a pool-based market  the central dot works as a market operator to centrally determine the market clearing price and energy dispatch for all agents. Thus, there is a single market clearing price (€/kWh) per period, which is an output from the market module not confuse with the price defined per agent.
+The pool market designs consists of representing the merit order mechanism and obtain the market clearing price through the intersection of supply and demand curves. Thus, the market has the goal of maximizing the social welfare, meaning that lower offers from producers and higher offers from consumers are accepted.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Programming_techniques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Programming_techniques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Software_tools"/>
+        <rdfs:comment xml:lang="en">Various programming techniques might be used to achieve space scalability, such as sparse matrix methods or compression.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations">
+        <rdfs:comment xml:lang="en">On a free market regulatory and legal issues do not impact the scale up of a solution. However, in practice there are regulations and laws that distort markets and that can be a barrier to the scaling up of a solution. Regulation defines the roles and responsibilities of agents, the rules and requirements to provide services, the rules on how to remunerate regulated activities and the rules on interaction between agents. With regard to scalability, regulation is understood in terms of its impact on size and scope of the project. Usually, the rules and requirements to provide certain services mostly affect scalability.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Scheduling_Algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Scheduling_Algorithms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Software_tools"/>
+        <rdfs:comment xml:lang="en">It is argued that systems with poor load scalability may exhibit it because they repeatedly engage in wasteful activity, because they are encumbered with poor scheduling algorithms, because they cannot fully take advantage of parallelism, or because they are algorithmically inefficient.
+The main purposes of scheduling algorithms are to minimize resource starvation and to ensure fairness amongst the parties utilizing the resources. Scheduling deals with the problem of deciding which of the outstanding requests is to be allocated resources. There are many different scheduling algorithms such as FIFO, Earliest Deadline First Scheduling, Shortest Remaining Time, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Sinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Sinks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Platform_users"/>
+        <rdfs:comment xml:lang="en">It is understood as a figure that requires to use a certain type of energy and a certain quantity. It therefore represents the market demand.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Smart_grids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Smart_grids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Energy_Transmission_Networks"/>
+        <rdfs:comment xml:lang="en">Smart grids for the distribution of the electricity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Software_tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Software_tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Technologies"/>
+        <rdfs:comment xml:lang="en">The software tools used for the development of the EMB3Rs platform are fundamental for a hypothetical future scalability and replicability of the results. The growing amount of data to be managed must be stored efficiently and must not lead to a decline in instrument performance. This clearly depends on the purely IT structure of the platform which includes tools such as the database and the scheduling algorithms used.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Sources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Sources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Platform_users"/>
+        <rdfs:comment xml:lang="en">It is the figure who makes available his own energy produced in excess. It therefore represents the market offer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Stakeholders">
+        <rdfs:comment xml:lang="en">The stakeholders of the platform but more generally of the energy domain play a very important role in the scalability of a project. Not only because they are the direct users of the platform but also because indirectly it is they who decide on the birth of new energy policies and at the same time on their acceptability, and since as already said the regulations influence the scalability then it is clear that the link between these classes tells us that stakeholders also have a significant influence on the scalability of the project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Standards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:comment xml:lang="en">The standards imposed by energy policies guide and influence the decisions of stakeholders. They constitute a tool of fundamental importance in the energy domain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Subsidies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:comment xml:lang="en">Subsidies such as taxes can influence the decision-making process of stakeholders.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Taxes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Taxes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Regulations"/>
+        <rdfs:comment xml:lang="en">It is a tool capable of influencing the decisions of stakeholders. It is therefore one of the main drivers that push towards certain decisions in the energy domain</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Technologies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/robertomonaco/ontologies/2021/5/Energy_Framework#Technologies">
+        <rdfs:comment xml:lang="en">In a constantly evolving context such as the energy one, it is clear that the technological factor cannot be ignored. Technology has a great influence on the scalability of a project in the energy domain as it is the one who dictates the expansion limit of any project.
+In our specific model the technology class includes a series of tools that influence both the direct scalability of the EMB3Rs project such as cloud and software tools and the indirect one such as the technologies that are financed for energy transmission (smart grid, DHC networks, etc.)
+In fact, while the direct scalability of our specific project requires the use of technologies connected to the software, the indirect scalability is instead connected to factors external to the platform but which indirectly also influence its scalability and its use.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
