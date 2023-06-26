@@ -19,7 +19,7 @@ streamlit run AHP.py
 - Streamlit python library for developing frontend
 
 ## Live Demo
-for live demo click [here](https://devarshukani-mcdm-calculator-ahp-90vce3.streamlit.app/)
+for live demo click [here](https://vis.flexsus.org/)
 
 ## Contributing
 Pull requests are welcome. <br>
