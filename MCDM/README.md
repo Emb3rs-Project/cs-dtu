@@ -40,7 +40,3 @@ If the streamlit environment variable is not set then run below command:
 
 For live demo click [here](https://vis.flexsus.org/).
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-"""
